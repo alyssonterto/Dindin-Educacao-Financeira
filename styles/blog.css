@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Ubuntu:wght@300;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Ubuntu';
+}
+
+/* INICIO SECAO CABECALHO */
+
+header {
+    background-color: #2E948A;
+    box-shadow: 0px 1px 4px black;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 0.5% 5%;
+}
+
+header img {
+    max-width: 80%;
+}
+
+#menuHeader {
+    width: 100%;
+    text-align: end;
+}
+
+#menuHeader li {
+    display: inline;
+    
+}
+
+#menuHeader li a {
+    margin-right: 3%;
+    text-decoration: none;
+    color: #fff;
+}
+
+#menuHeader li a:hover {
+    text-decoration: underline;
+}
+
+/* FIM SECAO CABECALHO */
+#topDescription {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 4% 0%;
+}
+
+#textTopDescription {
+    width: 25%;
+}
+
+#topDescription img {
+    width: 80%;
+}
+
+#sectionContents {
+    background-color: #E5E5E5;
+    padding: 4% 15%;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexRow {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4% 0%;
+}
+ 
+.flexRow p {
+    font-size: 70%;
+}
+
+.flexRow h3 {
+    color: #FF4081;
+}
+
+.flexRow img {
+    width: 100%;
+    
+}
+
+
+
+
+
+
+
+
+
+
+/* INICIO DO RODAPE */
+
+footer {
+    background-color: #2E948A;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3% 0% 1.5%;
+}
+
+footer img {
+    max-width: 80%;
+}
+
+#menuFooter li {
+    list-style-type: none;
+    margin: 15% 0%;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer button {
+    background-color: #2E948A;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    width: 100%;
+    height: 45px;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+footer button:hover {
+    background-color: #fff;
+    color: #2E948A;
+    cursor: pointer;
+}
+
+/* FIM DO RODAPE */
+
+
+@media only screen and (max-width: 440px) {
+    header, footer {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #menuHeader, #menuFooter {
+        text-align: center;
+    }
+
+
+    #topDescription img {
+        display: none;
+    }
+
+    #textTopDescription {
+        width: 95%;
+        padding: 4%;
+    }
+
+    .flexRow {
+        flex-wrap: wrap;
+    }
+}

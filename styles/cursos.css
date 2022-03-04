@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Ubuntu:wght@300;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Ubuntu';
+}
+
+/* INICIO SECAO CABECALHO */
+
+header {
+    background-color: #2E948A;
+    box-shadow: 0px 1px 4px black;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 0.5% 5%;
+}
+
+header img {
+    max-width: 80%;
+}
+
+#menuHeader {
+    width: 100%;
+    text-align: end;
+}
+
+#menuHeader li {
+    display: inline;
+    
+}
+
+#menuHeader li a {
+    margin-right: 3%;
+    text-decoration: none;
+    color: #fff;
+}
+
+#menuHeader li a:hover {
+    text-decoration: underline;
+}
+
+/* FIM SECAO CABECALHO */
+
+#textCursos {
+    padding: 3% 12% 1%;
+}
+
+h1, h2 {
+    color: #FF4081;
+}
+
+.TodosCursos {
+    display: flex;
+    justify-content: center;
+    padding: 3% 0%;
+}
+
+.TodosCursos button {
+   border: 1px solid #fff;
+   border-radius: 25px;
+   background-color: #2E948A;
+   color: #fff;
+   margin-top: 3.5%;
+   padding: 2% 7%;
+}
+
+.TodosCursos button:hover {
+    border: 1px solid #2E948A;
+    background-color: #fff;
+    color: #2E948A;
+    cursor: pointer;
+ }
+
+.textDescription {
+    padding-top: 2%;
+    width: 48%;
+}
+
+.TodosCursos img {
+    width: 70%;
+}
+
+
+.cursoMeio {
+    border-top: 3px solid #C4C4C4;
+    border-bottom: 3px solid #C4C4C4;
+    padding: 3% 0%;
+    
+}
+
+/* #cursoMeio {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    
+} */
+
+/* .Curso {
+    display: flex;
+} */
+/* INICIO DO RODAPE */
+
+footer {
+    background-color: #2E948A;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3% 0% 1.5%;
+}
+
+footer img {
+    max-width: 80%;
+}
+
+#menuFooter li {
+    list-style-type: none;
+    margin: 15% 0%;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer button {
+    background-color: #2E948A;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    width: 100%;
+    height: 45px;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+footer button:hover {
+    background-color: #fff;
+    color: #2E948A;
+    cursor: pointer;
+}
+
+/* FIM DO RODAPE */
+
+
+@media only screen and (max-width: 440px) {
+    header, footer {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #menuHeader, #menuFooter {
+        text-align: center;
+    }
+
+    .TodosCursos {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .TodosCursos img {
+        width: 70%;
+    }
+
+    .TodosCursos button {
+        padding: 4% 10%;
+        font-size: 15px;
+    }
+
+    .textDescription {
+        width: 90%;
+    }
+
+    .cursoMeio {
+        border: none;
+    }
+
+    .cursoMeio img {
+        border-top: 2px solid #C4C4C4;
+        border-bottom: 2px solid #C4C4C4;
+        padding: 5%;
+    }
+
+    
+
+}
